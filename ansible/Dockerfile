@@ -22,5 +22,5 @@ RUN builddeps=' \
 	&& pip install \
 		ansible \
 	&& apk del --purge $builddeps
-
+RUN echo 'essaie'
 ENTRYPOINT [ "ansible" ]
